@@ -1,27 +1,38 @@
-#area_cabecalho {
-    background-color: azure;
-    padding: 5px;
-    text-align: center;
-}
-a {
-  text-decoration: none;
-  color: red;  
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-a:link , a:visited {
-    color: black;
-    padding: 15PX 20PX;
-}
-a:hover {
-    background: black;
-    color: white;
+ul{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
-h1 {
-    color: 4e4e4e;
-    font-size: 2.5em;
+ul li{
+    display: inline-block;
 }
 
-.vermelho {
-    color: red;
+ul li a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+ul li:hover{
+    background: darkgray;
+}
+
+ul ul{
+    position: absolute;
+    min-width: 200px;
+    display: none;
+}
+
+ul ul li{
+    display: block;
+}
+
+ul li:hover ul{
+    display: block;
 }
